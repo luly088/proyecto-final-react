@@ -1,9 +1,49 @@
-body{
-    background-color: #578a81;
-    background-size: cover;
-    height: 100vh;
+
+
+.menu {
+    min-height: 200px;
+    display: inline-block;
+    background: blue;
+    width: 30%;
+  }
+.contenedor{
+    background-color:#0B192C ;
+    min-height: 200px;
+    display: inline-block;
+    width: 70%;
+
 }
-contenedor{
-    background-color: black;
-    
+.homepage{
+    min-height: 200px;
+    background: #FF6500
 }
+
+
+    li a:hover {
+        background-color: grey;  }
+
+li {
+    display: inline;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ 
+
+  }
+  a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+ul {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+    background-color: #dddddd;
+  }
+  
