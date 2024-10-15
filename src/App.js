@@ -10,9 +10,10 @@ function App() {
   return (
   
     <div className="App">
-    <div className="header">
-      <header></header> </div>
-      <div className="col">
+      <div className="header">
+        <Header />
+      </div>
+   <div className="col">
         <div className="row">
           <NavigatorBar />
         </div>
