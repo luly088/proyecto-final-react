@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';  
 
 const NavigatorBar = () => {
     return (
@@ -32,16 +33,27 @@ const NavigatorBar = () => {
                             <li className="nav-item">
                                 <a className="nav-link" href="#contacto">Contacto</a>
                             </li>
+                            
+                            <li className="nav-item">
+                                <a className="nav-link" href="#acerca-de-nosotros">Acerca de Nosotros</a>
+                            </li>
+                           
+                            <li className="nav-item">
+                                <a className="nav-link" href="#carrito">
+                                    <i className="bi bi-cart4" style={{ fontSize: '1.5rem' }}></i> {/* Ajusta el tamaño del ícono */}
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div className="mt-5"></div> {/* Espacio entre el Navbar y el contenido */}
+            <div className="mt-5"></div> 
         </>
     );
 };
 
 export default NavigatorBar;
+
 
 
 
