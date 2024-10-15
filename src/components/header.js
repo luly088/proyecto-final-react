@@ -8,10 +8,10 @@ class Header extends React.Component {
     render() {
       return (
         <header> 
-            <div className='contenedor'>
+            <div className='contenedor' color='orange' width="160px" height="160px<">
 
           <div>
-            <img src='{process.env.PUBLIC_URL/images/[logo barkery.png]}' width={160} height={160}/>
+            <img src="logo barkery.png" width={160} height={160}/>
           </div>
           
           <nav className="navbar navbar-expand-lg navbar-orange bg-orange">
