@@ -4,10 +4,13 @@ import React from "react";
 import NavigatorBar from "./components/NavigatorBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomePage from "./components/HomePage";
+import header from "./components/header";
 
 function App() {
   return (
+  
     <div className="App">
+    
       <div className="col">
         <div className="row">
           <NavigatorBar />
