@@ -4,16 +4,18 @@ import NavigatorBar from './NavigatorBar';
 
 
 
-const header= () => {
-    return (
-        <header>
-           
-                <nav className="navbar navbar-expand-lg navbar-orange bg-orange">
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="/">
-                        <img src='logo barkery.png' width={182} height={64}></img></a>
-        
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+class Header extends React.Component {
+    render() {
+      return (
+        <header> 
+            <div className='contenedor'>
+
+          <div>
+            <img src='logo barkery.png' width="160px" height="160px"/>
+          </div>
+          
+          <nav className="navbar navbar-expand-lg navbar-orange bg-orange">
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
@@ -38,15 +40,15 @@ const header= () => {
                             </li>
                         </ul>
                     </div>
-                </div>
+                
             </nav>
-            
+            </div>
+            </header>
+      );
+    }
+  }
    
-
-</header>
-    )
-}
-
+ 
 
     export default header;
     
