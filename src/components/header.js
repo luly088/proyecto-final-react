@@ -11,7 +11,7 @@ class Header extends React.Component {
             <div className='contenedor'>
 
           <div>
-            <img src='logo barkery.png' width="160px" height="160px"/>
+            <img src='{process.env.PUBLIC_URL/images/[logo barkery.png]}' width={160} height={160}/>
           </div>
           
           <nav className="navbar navbar-expand-lg navbar-orange bg-orange">
@@ -48,7 +48,5 @@ class Header extends React.Component {
     }
   }
    
- 
-
-    export default header;
+  export default Header;
     
