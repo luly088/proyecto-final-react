@@ -37,7 +37,6 @@ const NavigatorBar = ({ cartCount }) => {
                             <li className="nav-item">
                                 <a className="nav-link" href="#acerca-de-nosotros">Acerca de Nosotros</a>
                             </li>
-
                             <li className="nav-item">
                                 <a className="nav-link" href="#carrito">
                                     <i className="bi bi-cart4" style={{ fontSize: '1.5rem', position: 'relative' }}>
@@ -68,6 +67,20 @@ const NavigatorBar = ({ cartCount }) => {
 };
 
 export default NavigatorBar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
