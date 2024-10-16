@@ -46,10 +46,10 @@ const NavigatorBar = ({ cartCount }) => {
                                                 position: 'absolute',
                                                 top: '-10px',
                                                 right: '-10px',
-                                                backgroundColor: 'red',
+                                                backgroundColor: 'white',
                                                 borderRadius: '50%',
                                                 padding: '2px 6px',
-                                                color: 'white',
+                                                color: 'black',
                                                 fontSize: '0.75rem'
                                             }}
                                         >
