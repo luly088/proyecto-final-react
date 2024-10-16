@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const HomePage = () => {
@@ -27,8 +28,20 @@ const HomePage = () => {
                 <h2>Contacto</h2>
                 <p>Si tienes alguna pregunta, no dudes en contactarnos.</p>
             </section>
+
+            <section id="acerca-de-nosotros" className="container my-5">
+                <h2>Acerca de Nosotros</h2>
+                <p>Te contamos un poco de nuestra empresa</p>
+            </section>
         </div>
     );
-};
+}
 
 export default HomePage;
+
+
+
+
+
+
+

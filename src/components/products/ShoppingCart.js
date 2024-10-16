@@ -5,7 +5,7 @@ import Product from './Product';
 import CartItem from './CartItem';
 import ShoppingModal from '../ShoppingModal'; 
 import { TYPES } from '@/actions/actions';
-import Navbar from '@/components/Navbar';  
+import NavigatorBar from '@/components/NavigatorBar';  
 import axios from 'axios';
 
 const { ADD_TO_CART, REMOVE_ONE_ITEM, REMOVE_ALL_ITEMS, CART_CLEAR } = TYPES;
@@ -71,7 +71,7 @@ const ShoppingCart = () => {
 
   return (
     <>
-      <Navbar cartCount={totalProducts} /> 
+      <NavigatorBar cartCount={totalProducts} /> 
       <h2>Carrito de Compras</h2>
       <h3>Productos</h3>
       <div className="box grid-responsive">
