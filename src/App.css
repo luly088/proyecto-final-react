@@ -1,5 +1,7 @@
 
-
+body{
+  background-color: #024CAA;
+}
 .menu {
     min-height: 200px;
     display: inline-block;

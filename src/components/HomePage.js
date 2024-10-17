@@ -3,7 +3,9 @@ import React from 'react';
 const HomePage = () => {
     return (
         <div>
-            <section id="perros" className="container my-5">
+            <section 
+            
+             id="perros" className="container my-5">
                 <h2>Sección de Perros</h2>
                 <p>Encuentra todo lo que necesitas para tus perros, desde comida hasta accesorios.</p>
             </section>
