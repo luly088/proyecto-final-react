@@ -1,7 +1,9 @@
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
-const NavigatorBar = () => {
+const NavigatorBar = ({ cartCount }) => {
     return (
     
     
@@ -29,16 +31,104 @@ const NavigatorBar = () => {
                             <li className="nav-item">
                                 <a className="nav-link" href="#contacto">Contacto</a>
                             </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#acerca-de-nosotros">Acerca de Nosotros</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#carrito">
+                                    <i className="bi bi-cart4" style={{ fontSize: '1.5rem', position: 'relative' }}>
+                                        <span 
+                                            style={{
+                                                position: 'absolute',
+                                                top: '-10px',
+                                                right: '-10px',
+                                                backgroundColor: 'white',
+                                                borderRadius: '50%',
+                                                padding: '2px 6px',
+                                                color: 'black',
+                                                fontSize: '0.75rem'
+                                            }}
+                                        >
+                                            {cartCount}
+                                        </span>
+                                    </i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 
             </nav>
+
       
-        
+       
+        </>
+
     );
 };
 
 export default NavigatorBar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
