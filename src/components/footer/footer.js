@@ -7,9 +7,9 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-3 col-md-6 mb-4">
-                        <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Logo Fatiga" style={{ width: '150px' }} />
+                        <img src={`${process.env.PUBLIC_URL}/images/imagen-barkery.jpg`} alt="Logo Fatiga" style={{ width: '150px' }} />
                         <h5>Sobre Nosotros</h5>
-                        <p>En Fatiga, nos dedicamos a ofrecer los mejores productos para tus mascotas.</p>
+                        <p>En Barkery, nos dedicamos a ofrecer los mejores productos para tus mascotas.</p>
                     </div>
                     <div className="col-lg-3 col-md-6 mb-4">
                         <h5>Categorías</h5>
