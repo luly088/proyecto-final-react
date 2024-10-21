@@ -4,7 +4,8 @@ import React from "react";
 import NavigatorBar from "./components/NavigatorBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomePage from "./components/HomePage";
-
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import './tailwind.css'; 
 function App() {
   return (
     <div className="App">

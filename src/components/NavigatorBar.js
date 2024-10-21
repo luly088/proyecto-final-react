@@ -1,67 +1,55 @@
-
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const NavigatorBar = ({ cartCount }) => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="/">
-                        <img src={`${process.env.PUBLIC_URL}/images/imagen-barkery.jpg`} alt="Logo Barkery" style={{ width: '100px' }} />
+            <nav className="bg-gray-800">
+                <div className="container mx-auto flex items-center justify-between px-4 py-3">
+                    <a className="text-white" href="/">
+                        <img
+                            src={`${process.env.PUBLIC_URL}/images/imagen-barkery.jpg`}
+                            alt="Logo Barkery"
+                            className="w-24"
+                        />
                     </a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav ms-auto">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">Inicio</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#perros">Perros</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#gatos">Gatos</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#peces">Peces</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#aves">Aves</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#contacto">Contacto</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#acerca-de-nosotros">Acerca de Nosotros</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#carrito">
-                                    <i className="bi bi-cart4" style={{ fontSize: '1.5rem', position: 'relative' }}>
-                                        <span 
-                                            style={{
-                                                position: 'absolute',
-                                                top: '-10px',
-                                                right: '-10px',
-                                                backgroundColor: 'white',
-                                                borderRadius: '50%',
-                                                padding: '2px 6px',
-                                                color: 'black',
-                                                fontSize: '0.75rem'
-                                            }}
-                                        >
-                                            {cartCount}
-                                        </span>
-                                    </i>
-                                </a>
-                            </li>
-                        </ul>
+                    <div className="flex lg:hidden">
+                        <button
+                            className="text-white focus:outline-none"
+                            type="button"
+                        >
+                           
+                            <svg
+                                className="h-6 w-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="2"
+                                    d="M4 6h16M4 12h16M4 18h16"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div className="hidden lg:flex space-x-4">
+                        <a className="text-white hover:text-gray-300" href="/">Inicio</a>
+                        <a className="text-white hover:text-gray-300" href="#perros">Perros</a>
+                        <a className="text-white hover:text-gray-300" href="#gatos">Gatos</a>
+                        <a className="text-white hover:text-gray-300" href="#peces">Peces</a>
+                        <a className="text-white hover:text-gray-300" href="#aves">Aves</a>
+                        <a className="text-white hover:text-gray-300" href="#contacto">Contacto</a>
+                        <a className="text-white hover:text-gray-300" href="#acerca-de-nosotros">Acerca de Nosotros</a>
+                        <a className="relative text-white hover:text-gray-300" href="#carrito">
+                            <i className="bi bi-cart4 text-xl">{cartCount}</i>
+                           
+                        </a>
                     </div>
                 </div>
             </nav>
-            <div className="mt-5"></div> 
+            <div className="mt-5"></div>
         </>
     );
 };
